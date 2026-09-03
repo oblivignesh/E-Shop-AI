@@ -1,0 +1,30 @@
+# ---- Byte-compiled / cache ----
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ---- Env / secrets ----
+.env
+.env.local
+.venv/
+venv/
+
+# ---- Build ----
+dist/
+build/
+*.egg-info/
+
+# ---- Data (keep raw CSVs local; never commit generated DBs / vector store) ----
+data/aura.db
+data/checkpoints.db
+data/chroma/
+data/raw/*.csv
+
+# ---- IDE ----
+.idea/
+.vscode/
+*.swp
+.DS_Store
